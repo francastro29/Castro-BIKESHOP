@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+.hero h2, .hero p {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Orbitron', sans-serif !important; }
+
+header {
+  background-color: #d41010;
+  width: 100%;
+  height: 20vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center !important;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  z-index: 1; }
+  header h1 {
+    color: white;
+    font: size 100px;
+    font-style: oblique;
+    margin-top: 5px; }
+  header .navbar {
+    width: 100%;
+    height: 5vh;
+    padding: 0px;
+    margin: 0px;
+    color: white !important; }
+    header .navbar div ul .nav-link {
+      color: white !important; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+  header nav li {
+    text-align: center;
+    margin: 35px 10px 0px 10px; }
+  header nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: white; }
+    header nav a:hover {
+      background-color: #8f0f0f; }
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background-image: url(../img/imagen-para-fondo-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black; }
+  .hero h2 {
+    width: 100%;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 15px; }
+  .hero p {
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 10px; }
+
+.nuestrosserv {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px; }
+  .nuestrosserv h2 {
+    font-size: 25px; }
+
+.grid-galeria {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  border: 4px solid #d41010;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-rows: 250px; }
+  .grid-galeria .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .grid-galeria .grid-item h3 {
+      font-size: 15px;
+      position: relative;
+      bottom: 0;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.671); }
+
+.productos {
+  color: white;
+  background-color: black; }
+  .productos h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px; }
+
+.productos-cont {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  border: 4px solid #d41010;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-rows: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none; }
+  .productos-cont div {
+    width: 270px;
+    height: 450px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid white; }
+    .productos-cont div img {
+      width: 100%;
+      height: 330px; }
+    .productos-cont div h3 {
+      font-size: 20px;
+      margin: 10px; }
+    .productos-cont div a {
+      text-decoration: none;
+      color: white;
+      background-color: #d41010;
+      border: 2px solid white;
+      padding: 5px; }
+      .productos-cont div a:hover {
+        background-color: #8f0f0f; }
+
+.flotante .wsp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #25d366;
+  padding: 5px;
+  border-radius: 100px; }
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 20px;
+  background-color: #d41010; }
+  .redes h2 {
+    font-style: oblique;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white; }
+  .redes div h3 {
+    font-size: 15px;
+    color: white; }
+
+@media screen and (max-width: 770px) {
+  .grid-galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px; }
+  .productos-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 512px) {
+  header {
+    position: static;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  header h1 {
+    font-size: 20px; }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px; }
+  header nav ul li {
+    margin: 0; } }
+
+@media screen and (max-width: 510px) {
+  .hero h2 {
+    font-size: 15px; }
+  .hero p {
+    font-size: 10px; } }

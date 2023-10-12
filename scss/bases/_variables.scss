@@ -1,0 +1,15 @@
+$color-headerfooterybordes:  rgb(212, 16, 16);
+$color-background: black;
+$color-letra:  white;
+$color-hover:  rgb(143, 15, 15);
+$color-backtransp: rgba(0, 0, 0, 0.671);
+$color-wsp:  rgb(37, 211, 102);
+
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+

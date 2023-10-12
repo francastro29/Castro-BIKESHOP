@@ -1,0 +1,120 @@
+.hero{
+    width: 100%;
+    height: 80vh;
+    color: white;
+    background-image: url(../img/imagen-para-fondo-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: $color-background;
+    h2{
+        width: 100%;
+        font-size: 30px;
+        background-color: $color-backtransp;
+        padding: 15px;
+        @extend %flex-column;
+    
+    }
+    p{
+        width: 100%;
+        font-size: 20px;
+        background-color: $color-backtransp;
+        padding: 10px;
+        @extend %flex-column;
+    }
+}
+.nuestrosserv{
+    width: 100%;
+    text-align: center;
+    background-color: $color-background;
+    color: white;
+    padding: 10px;
+    h2{
+        font-size: 25px;
+    }
+}
+.grid-galeria{
+    background-color:$color-background; 
+    width: 100%;
+    padding: 20px;
+    color: white;
+    border: 4px solid $color-headerfooterybordes ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-rows: 250px;
+    .grid-item{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        h3{
+            font-size: 15px;
+            position: relative;
+            bottom: 0;
+            color: white;
+            background-color: $color-backtransp;
+        }
+    }
+}
+.productos{
+    color: white;
+    background-color: $color-background;
+    h2{
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+        font-size: 25px ;
+    }
+}
+.productos-cont{
+    background-color:$color-background; 
+    width: 100%;
+    padding: 20px;
+    color: white;
+    border: 4px solid $color-headerfooterybordes ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-rows: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    div{
+        width: 270px;
+        height: 450px;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid $color-letra;
+        img{
+            width:100%;
+            height: 330px;
+        }
+        h3{
+            font-size: 20px;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: $color-headerfooterybordes;
+            border: 2px solid $color-letra;
+            padding: 5px;
+            &:hover{
+                background-color: $color-hover;
+            }
+        }
+    }
+
+}
+.flotante{
+    .wsp{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: $color-wsp;
+        padding: 5px;
+        border-radius: 100px;
+    }
+}
