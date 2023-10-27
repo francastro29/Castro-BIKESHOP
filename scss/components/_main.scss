@@ -72,45 +72,55 @@
             font-size: 25px ;
         }
     }
-    .productos-cont{
-        background-color:$color-background; 
-        width: 100%;
-        padding: 20px;
-        color: white;
-        border: 4px solid $color-headerfooterybordes ;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-rows: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        list-style: none;
-        div{
-            width: 270px;
-            height: 450px;
-            text-align: center;
-            margin: 10px;
-            border: 2px solid $color-letra;
-            img{
-                width:100%;
-                height: 330px;
-            }
-            h3{
-                font-size: 20px;
+    .prodin{
+        .productos-cont{
+            background-color:$color-background; 
+            width: 100%;
+            padding: 20px;
+            color: white;
+            border: 4px solid $color-headerfooterybordes ;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-rows: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+            div{
+                width: 270px;
+                height: 450px;
+                text-align: center;
                 margin: 10px;
-            }
-            a{
-                text-decoration: none;
-                color: white;
-                background-color: $color-headerfooterybordes;
                 border: 2px solid $color-letra;
-                padding: 5px;
+                transition: 50ms;
                 &:hover{
-                    background-color: $color-hover;
+                    box-shadow: 30px 30px 30px -14px rgba(236, 19, 19, 0.856);
+                    -webkit-box-shadow:  30px 30px 30px -14px rgba(236, 19, 19, 0.856);
+                    -max-box-shadow:  30px 30px 30px -14px rgba(236, 19, 19, 0.856);
+                    transform: scale(1.1);
+                }
+                img{
+                    width:100%;
+                    height: 330px;
+                }
+                h3{
+                    font-size: 20px;
+                    margin: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    background-color: $color-headerfooterybordes;
+                    border: 2px solid $color-letra;
+                    padding: 5px;
+                    &:hover{
+                        background-color: $color-hover;
+                    }
                 }
             }
-        }
+    }
+    
 
     }
     .flotante{
