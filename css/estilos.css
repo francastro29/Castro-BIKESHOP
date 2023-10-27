@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 .hero h2, .hero p {
   display: flex;
@@ -13,44 +14,31 @@
 body {
   font-family: 'Orbitron', sans-serif !important; }
 
-header {
-  background-color: #d41010;
-  width: 100%;
-  height: 20vh;
-  position: sticky;
+header .navbar {
+  background-color: #d41010 !important;
+  position: sticky !important;
   top: 0;
-  display: flex;
-  flex-direction: column !important;
-  justify-content: center;
-  align-items: center !important;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  z-index: 1; }
-  header h1 {
-    color: white;
-    font: size 100px;
-    font-style: oblique;
-    margin-top: 5px; }
-  header .navbar {
-    width: 100%;
-    height: 5vh;
-    padding: 0px;
-    margin: 0px;
-    color: white !important; }
-    header .navbar div ul .nav-link {
-      color: white !important; }
-  header nav ul {
-    list-style: none;
-    display: flex; }
-  header nav li {
-    text-align: center;
-    margin: 35px 10px 0px 10px; }
-  header nav a {
-    padding: 5px;
-    text-decoration: none;
-    color: white; }
-    header nav a:hover {
-      background-color: #8f0f0f; }
+  margin: 0px;
+  padding-top: 0px; }
+
+header .navbar-brand {
+  font-size: 25px;
+  color: white;
+  font-style: oblique;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 0px; }
+
+.container-fluid .navbar-collapse {
+  justify-content: flex-end; }
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 15px;
+  margin-right: 15px; }
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: #8f0f0f; }
 
 .hero {
   width: 100%;
@@ -61,17 +49,20 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: black; }
+  background-color: black;
+  margin: 0px; }
   .hero h2 {
     width: 100%;
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.671);
-    padding: 15px; }
+    padding: 20px;
+    margin-bottom: 0px; }
   .hero p {
     width: 100%;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.671);
-    padding: 10px; }
+    margin-top: 0px;
+    padding: 20px; }
 
 .nuestrosserv {
   width: 100%;
@@ -94,7 +85,8 @@ header {
   grid-template-rows: 250px; }
   .grid-galeria .grid-item {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center; }
     .grid-galeria .grid-item h3 {
       font-size: 15px;
@@ -155,12 +147,82 @@ header {
   padding: 5px;
   border-radius: 100px; }
 
+.mains {
+  background-color: black;
+  color: white; }
+  .mains .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px; }
+
+.maincont {
+  background-color: black;
+  color: white;
+  padding: 5px; }
+  .maincont section {
+    border: 2px solid #d41010;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .maincont section h2 {
+      font-size: 25px;
+      font-style: oblique; }
+
+.mainenvios {
+  background-color: black;
+  color: white;
+  padding: 5px; }
+  .mainenvios section {
+    border: 2px solid #d41010;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainenvios section h2 {
+      font-size: 25px;
+      font-style: oblique; }
+
+.mainprod {
+  background-color: black;
+  color: white; }
+  .mainprod h1 {
+    font-style: oblique; }
+  .mainprod .prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #d41010; }
+  .mainprod .carusel {
+    border: 2px solid #d41010;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black; }
+    .mainprod .carusel h2 {
+      font-style: oblique; }
+    .mainprod .carusel h5 {
+      background-color: rgba(0, 0, 0, 0.856); }
+    .mainprod .carusel a {
+      text-decoration: none;
+      color: white;
+      background-color: #d41010;
+      border: 2px solid white;
+      padding: 5px; }
+      .mainprod .carusel a:hover {
+        background-color: #8f0f0f; }
+
 .redes {
   display: flex;
   flex-direction: column;
   justify-content: left;
   padding: 20px;
-  background-color: #d41010; }
+  background-color: #d41010;
+  color: white;
+  margin-top: 0px; }
   .redes h2 {
     font-style: oblique;
     padding-bottom: 10px;
@@ -180,19 +242,81 @@ header {
     align-items: center;
     justify-content: center; } }
 
-@media screen and (max-width: 512px) {
+@media (max-width: 512px) {
   header {
     position: static;
     padding-top: 0px;
-    padding-bottom: 0px; }
+    flex-direction: column; }
   header h1 {
-    font-size: 20px; }
-  header nav ul {
+    font-size: 40px; } }
+
+@media screen and (max-width: 400px) {
+  header .navbar-brand {
+    font-size: 15px; }
+  .mainprod .prod h1 {
+    font-size: 15px; }
+  .mainprod .prod p {
+    font-size: 5px; }
+  .carusel {
     display: flex;
-    justify-content: space-between;
-    font-size: 10px; }
-  header nav ul li {
-    margin: 0; } }
+    flex-direction: column;
+    align-items: center; }
+    .carusel .respon {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px; }
+      .carusel .respon h3 {
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, 0.856); }
+      .carusel .respon a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #d41010;
+        border: 2px solid white;
+        padding: 5px; }
+        .carusel .respon a:hover {
+          background-color: #8f0f0f; }
+    .carusel h2 {
+      margin-bottom: 10px;
+      font-size: 12px; }
+    .carusel .carousel-inner .carousel-item img {
+      max-width: 300px;
+      /* Establece el ancho máximo de la imagen */
+      max-height: 200px;
+      /* Establece la altura máxima de la imagen */ }
+    .carusel #carouselTransmisiones {
+      max-width: 300px;
+      /* Establece el ancho máximo del carrusel */
+      max-height: 200px; }
+    .carusel #carouselHorquillas {
+      max-width: 300px;
+      /* Establece el ancho máximo del carrusel */
+      max-height: 200px; }
+    .carusel #carouselCuadros {
+      max-width: 300px;
+      /* Establece el ancho máximo del carrusel */
+      max-height: 200px; }
+    .carusel .redes h2 {
+      font-size: 15px; }
+    .carusel .redes div h3 {
+      font-size: 10px; }
+    .carusel .redes div a img {
+      width: 30px;
+      height: 30px; } }
+
+@media screen and (min-width: 400px) {
+  .carusel .respon {
+    display: none; } }
+
+@media screen and (max-width: 512px) {
+  .carusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 510px) {
   .hero h2 {

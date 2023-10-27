@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="description" content="Aqui encontraras los mejores productos para el ciclismo de montaña.">
     <meta name="keywords" content="ciclismo, mtb, transmision, montaña, repuestos, reparacion, envios, senda, tutoriales, horquilla, cuadro">
@@ -13,49 +13,41 @@
 </head>
 <body>
     <header>
-        <h1>Castro BIKESHOP</h1>
-        <!--ACA VA EL LOGO-->
-        <div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CastroBIKESHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html"">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/servicios.html#envios">Envios</a></li>
-                            <li><a class="dropdown-item" href="../pages/servicios.html#retira">Retiro en local</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            
-                        </ul>
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/contactanos.html">Contactanos</a>
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
                         </li>
                     </ul>
-                    
-                    </div>
-                    </div>
-                </nav>
-        </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="maincont">
         <section>
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos una pequeña empresa familiar dedicada a ofrecerte lo mejor, nos iniciamos este año y te prometemos brindarte siempre una buena atencion para que estes satisfecho con nustro trabajo. En el siguiente video puedes conocer un poco mas acerca de nosotros.</p>
+        </section>
+        <section class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/dG_tMICCLN0?si=hHLH78Ij022iPedI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </main>

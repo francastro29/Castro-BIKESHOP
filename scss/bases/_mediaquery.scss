@@ -12,27 +12,131 @@
 }
 
 
-@media  screen and (max-width:512px){   
+
+    
+
+@media (max-width: 512px) {
 
     header{
         position: static;
         padding-top: 0px;
-    padding-bottom: 0px;
+        flex-direction: column;
     
     } 
     header h1{
-        font-size: 20px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header{
+        .navbar-brand{
+            font-size: 15px;
+        }
+    }
+    .mainprod{
+        .prod{
+            h1{
+                font-size: 15px;
+            }
+            p{
+                font-size: 5px;
+            }
+        }
     }
 
-    header nav ul{
+    
+    .carusel{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .respon{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                padding: 10px;
+                h3{
+                    font-size: 10px;
+                    background-color: rgba(0, 0, 0, 0.856);
+                }
+                a{
+                    font-size: 10px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: rgb(212, 16, 16);
+                    border: 2px solid white;
+                    padding: 5px;
+                    &:hover{
+                        background-color: rgb(143, 15, 15);
+                    }
+                }
+            }
+            h2{
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        max-width: 300px; /* Establece el ancho máximo de la imagen */
+                        max-height: 200px; /* Establece la altura máxima de la imagen */
+                    }
+                }
+            }
+
+
+            #carouselTransmisiones {
+                max-width: 300px; /* Establece el ancho máximo del carrusel */
+                max-height: 200px;
+            }
+            #carouselHorquillas {
+                max-width: 300px; /* Establece el ancho máximo del carrusel */
+                max-height: 200px;
+            }
+            #carouselCuadros {
+                max-width: 300px; /* Establece el ancho máximo del carrusel */
+                max-height: 200px;
+            }
+    .redes{
+        h2{
+            font-size: 15px;
+        }
+        div{
+            h3{
+                font-size: 10px;
+            }
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (min-width:400px) {
+    .carusel{
+        .respon{
+            display: none;
+        }
+    }
+            }
+        
+
+    
+    
+
+
+@media  screen and (max-width:512px){
+    .carusel{
         display: flex;
-        justify-content: space-between;
-        font-size: 10px ;
-
-
-    }
-    header nav ul li{
-        margin: 0;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

@@ -1,120 +1,219 @@
-.hero{
-    width: 100%;
-    height: 80vh;
-    color: white;
-    background-image: url(../img/imagen-para-fondo-4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: $color-background;
-    h2{
+
+    .hero{
         width: 100%;
-        font-size: 30px;
-        background-color: $color-backtransp;
-        padding: 15px;
-        @extend %flex-column;
-    
-    }
-    p{
-        width: 100%;
-        font-size: 20px;
-        background-color: $color-backtransp;
-        padding: 10px;
-        @extend %flex-column;
-    }
-}
-.nuestrosserv{
-    width: 100%;
-    text-align: center;
-    background-color: $color-background;
-    color: white;
-    padding: 10px;
-    h2{
-        font-size: 25px;
-    }
-}
-.grid-galeria{
-    background-color:$color-background; 
-    width: 100%;
-    padding: 20px;
-    color: white;
-    border: 4px solid $color-headerfooterybordes ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-rows: 250px;
-    .grid-item{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        h3{
-            font-size: 15px;
-            position: relative;
-            bottom: 0;
-            color: white;
-            background-color: $color-backtransp;
-        }
-    }
-}
-.productos{
-    color: white;
-    background-color: $color-background;
-    h2{
-        text-align: center;
+        height: 80vh;
+        color: white;
+        background-image: url(../img/imagen-para-fondo-4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: $color-background;
         margin: 0px;
-        padding: 10px;
-        font-size: 25px ;
-    }
-}
-.productos-cont{
-    background-color:$color-background; 
-    width: 100%;
-    padding: 20px;
-    color: white;
-    border: 4px solid $color-headerfooterybordes ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-rows: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    div{
-        width: 270px;
-        height: 450px;
-        text-align: center;
-        margin: 10px;
-        border: 2px solid $color-letra;
-        img{
-            width:100%;
-            height: 330px;
+        h2{
+            width: 100%;
+            font-size: 30px;
+            background-color: $color-backtransp;
+            padding: 20px;
+            @extend %flex-column;
+            margin-bottom: 0px;
+        
         }
-        h3{
+        p{
+            width: 100%;
             font-size: 20px;
-            margin: 10px;
+            background-color: $color-backtransp;
+            margin-top: 0px;
+            padding: 20px;
+            @extend %flex-column;
         }
-        a{
-            text-decoration: none;
-            color: white;
-            background-color: $color-headerfooterybordes;
-            border: 2px solid $color-letra;
-            padding: 5px;
-            &:hover{
-                background-color: $color-hover;
+    }
+    .nuestrosserv{
+        width: 100%;
+        text-align: center;
+        background-color: $color-background;
+        color: white;
+        padding: 10px;
+        h2{
+            font-size: 25px;
+        }
+    }
+    .grid-galeria{
+        background-color:$color-background; 
+        width: 100%;
+        padding: 20px;
+        color: white;
+        border: 4px solid $color-headerfooterybordes ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-rows: 250px;
+        .grid-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items:center;
+            h3{
+                font-size: 15px;
+                position: relative;
+                bottom: 0;
+                color: white;
+                background-color: $color-backtransp;
             }
         }
     }
+    .productos{
+        color: white;
+        background-color: $color-background;
+        h2{
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+            font-size: 25px ;
+        }
+    }
+    .productos-cont{
+        background-color:$color-background; 
+        width: 100%;
+        padding: 20px;
+        color: white;
+        border: 4px solid $color-headerfooterybordes ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-rows: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        div{
+            width: 270px;
+            height: 450px;
+            text-align: center;
+            margin: 10px;
+            border: 2px solid $color-letra;
+            img{
+                width:100%;
+                height: 330px;
+            }
+            h3{
+                font-size: 20px;
+                margin: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: $color-headerfooterybordes;
+                border: 2px solid $color-letra;
+                padding: 5px;
+                &:hover{
+                    background-color: $color-hover;
+                }
+            }
+        }
 
+    }
+    .flotante{
+        .wsp{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: $color-wsp;
+            padding: 5px;
+            border-radius: 100px;
+        }
+    }
+    .mains{
+        background-color: $color-background;
+        color: white;
+        .video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+        }
+    
+    }
+
+
+
+
+.maincont{
+    background-color: $color-background;
+    color: $color-letra;
+    padding: 5px;
+    section{
+        border: 2px solid $color-headerfooterybordes;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 25px;
+            font-style: oblique;
+        
+        }
+    }
 }
-.flotante{
-    .wsp{
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        background-color: $color-wsp;
+
+.mainenvios{
+    background-color: $color-background;
+    color: $color-letra;
+    padding: 5px;
+    section{
+        border: 2px solid $color-headerfooterybordes;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 25px;
+            font-style: oblique;
+        
+        }
+    }
+}
+
+.mainprod{
+    background-color: $color-background;
+    color: $color-letra;
+    h1{
+        font-style: oblique;
+    }
+    
+    .prod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $color-headerfooterybordes;
+        
+    }
+    .carusel{
+        border: 2px solid $color-headerfooterybordes;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        h2{
+            font-style: oblique
+        }
+        h5{
+        
+        background-color: rgba(0, 0, 0, 0.856);
+    }
+    
+        a{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(212, 16, 16);
+        border: 2px solid white;
         padding: 5px;
-        border-radius: 100px;
+        &:hover{
+            background-color: rgb(143, 15, 15);
+        }
+    }
+
     }
 }

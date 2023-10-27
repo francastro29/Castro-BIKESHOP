@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="description" content="Aqui encontraras los mejores productos para el ciclismo de montaña.">
     <meta name="keywords" content="ciclismo, mtb, transmision, montaña, repuestos, reparacion, envios, senda, tutoriales, horquilla, cuadro">
@@ -13,90 +13,199 @@
 </head>
 <body>
     <header>
-        <h1>Castro BIKESHOP</h1>
-        <!--ACA VA EL LOGO-->
-        <div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CastroBIKESHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html"">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/servicios.html#envios">Envios</a></li>
-                            <li><a class="dropdown-item" href="../pages/servicios.html#retira">Retiro en local</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            
-                        </ul>
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/contactanos.html">Contactanos</a>
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
                         </li>
                     </ul>
-                    
-                    </div>
-                    </div>
-                </nav>
-        </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section class="productos">
-        <h2>Productos</h2>
-    </section>   
-    <section class="carusel">
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/grupo-shimanop.jpg" class="d-block w-100" alt="Grupo completo Shimano XTR">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Grupo completo Shimano XTR</h5>
-                    <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+    <main class="mainprod">
+        <section class="prod">
+            <h1>Productos</h1>
+            <p>Estos son los productos que podemos ofrecerte en estos momentos, tenemos variedad de marcas y calidades</p>
+        </section>
+        <section class="carusel">
+            <h2>Transmisiones</h2>
+            <div id="carouselTransmisiones" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselTransmisiones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselTransmisiones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselTransmisiones" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/horquilla-rpckshox-sidp.jpg" class="d-block w-100" alt="Horquilla ROCK SHOX SID">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Horquilla ROCK SHOX SID</h5>
-                    <a href="https://mpago.la/2LnHh1R" target="_blank">COMPRAR</a>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/grupo-shimanop.jpg" class="d-block w-100" alt="Grupo completo Shimano XTR">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grupo completo Shimano XTR</h5>
+                        <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Grupo completo Shimano XTR</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/cuadro-scottp.jpg" class="d-block w-100" alt="Cuadro SCOTT SPARK RC">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Cuadro SCOTT SPARK RC</h5>
-                    <a href="https://mpago.la/2iz5UjJ" target="_blank">COMPRAR</a>
+                <div class="carousel-item">
+                    <img src="../img/sramgx (1).jpg" class="d-block w-100" alt="Grupo completo SRAM GX">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grupo Completo SRAM GX</h5>
+                        <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Grupo completo SRAM GX</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
                 </div>
+                <div class="carousel-item">
+                    <img src="../img/ltwoo.jpg" class="d-block w-100" alt="Grupo Completo L-TWOO A12">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grupo Completo L-TWOO A12</h5>
+                        <a href="https://mpago.la/2iz5UjJ" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Grupo completo L-TWOO A12</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTransmisiones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTransmisiones" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
+        </section>
+        <section class="carusel">
+            <h2>Horquillas</h2>
+            <div id="carouselHorquillas" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHorquillas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHorquillas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHorquillas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/horquilla-rpckshox-sidp.jpg" class="d-block w-100" alt="Horquilla ROCK SHOX SID">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Horquilla ROCK SHOX SID</h5>
+                        <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Horquilla ROCK SHOX SID</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/fox32.jpg" class="d-block w-100" alt="Horquilla FOX 32">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Horquilla FOX 32</h5>
+                        <a href="https://mpago.la/2LnHh1R" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Horquilla FOX 32</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/recon (1).jpg" class="d-block w-100" alt="Horquilla ROCK SHOX RECON">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Horquilla ROCK SHOX RECON</h5>
+                        <a href="https://mpago.la/2iz5UjJ" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Horquilla ROCK SHOX RECON</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHorquillas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHorquillas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+        </section>
+        <section class="carusel">
+            <h2>Cuadros</h2>
+            <div id="carouselCuadros" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCuadros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCuadros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCuadros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/cuadro-scottp.jpg" class="d-block w-100" alt="Scott SPARK RC">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Scott SPARK RC</h5>
+                        <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Scott SPARK RC</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/specialized.jpg" class="d-block w-100" alt="Specialized EPIC PRO">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Specialized EPIC PRO</h5>
+                        <a href="https://mpago.la/2LnHh1R" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Specialized EPIC PRO</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/trek.jpg" class="d-block w-100" alt="Trek SUPERCALIBER">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Trek SUPERCALIBER</h5>
+                        <a href="https://mpago.la/2iz5UjJ" target="_blank">COMPRAR</a>
+                    </div>
+            <section class="respon">
+                <h3>Trek SUPERCALIBER</h3>
+                <a href="https://mpago.la/23pbced" target="_blank">COMPRAR</a>
+            </section>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCuadros" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCuadros" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     </main>
     <footer class="redes" id="pie">
         <h2>Castro BIKESHOP</h2>
